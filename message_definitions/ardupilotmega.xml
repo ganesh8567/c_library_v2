@@ -1,5 +1,6 @@
 <?xml version="1.0"?>
 <mavlink>
+  <include>dbgcs.xml</include>
   <include>common.xml</include>
   <!-- Vendors -->
   <include>uAvionix.xml</include>
