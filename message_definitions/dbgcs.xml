@@ -1,0 +1,79 @@
+<?xml version="1.0"?>
+<mavlink>
+  <messages>
+
+    <!-- ========================================================= -->
+    <!-- DBGCS_COMM_CONTROL (ID: 13000) -->
+    <!-- ========================================================= -->
+    <message id="13000" name="DBGCS_COMM_CONTROL">
+      <description>
+        Control message to operate pump power and resume mission control.
+      </description>
+
+      <field type="uint8_t" name="pump_OnOFF">
+        1 indicates to power on the pump, 0 to power off the pump
+      </field>
+
+      <field type="uint8_t" name="resumemission_OnOFF">
+        1 indicates to resume mission enable, 0 to resume mission disable
+      </field>
+    </message>
+
+    <!-- ========================================================= -->
+    <!-- DBGCS_COMM (ID: 13001) -->
+    <!-- ========================================================= -->
+    <message id="13001" name="DBGCS_COMM">
+      <description>
+        DBGCS communication message carrying flight time, flow meter,
+        remaining payload and pump feedback status.
+      </description>
+
+      <field type="uint32_t" name="flight_time" units="s">
+        Flight time, gets its value from autopilot
+      </field>
+
+      <field type="float" name="flowmeter_val">
+        Indicates value of the flowmeter
+      </field>
+
+      <field type="float" name="remaining_payload">
+        Indicates value of the fuel remaining
+      </field>
+
+      <field type="uint8_t" name="pu_feeback_val">
+        1 indicates pump is on and spraying, 0 indicates pump is off or faulty
+      </field>
+    </message>
+
+    <!-- ========================================================= -->
+    <!-- DBGCS_MOTORCAN (ID: 13002) -->
+    <!-- ========================================================= -->
+    <message id="13002" name="DBGCS_MOTORCAN">
+      <description>
+        Motor CAN telemetry message carrying current, voltage, RPM,
+        error flags, and motor temperature.
+      </description>
+
+      <field type="float" name="current">
+        Indicates value of the current
+      </field>
+
+      <field type="float" name="voltage">
+        Indicates value of the voltage
+      </field>
+
+      <field type="float" name="rpm">
+        Motor speed
+      </field>
+
+      <field type="uint8_t" name="error_flags">
+        States error if any in motor
+      </field>
+
+      <field type="uint8_t" name="temperature" units="deg">
+        Temperature of motors
+      </field>
+    </message>
+
+  </messages>
+</mavlink>
