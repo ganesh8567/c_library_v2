@@ -17,6 +17,8 @@
   -->
   <include>common.xml</include>
   <include>development.xml</include>
+  <!--  CUSTOM DIALECT -->
+  <include>dbgcs.xml</include>
   <!-- icarous.xml range of IDs:
     messages: 42000 - 42999
     commands: ? - ?
