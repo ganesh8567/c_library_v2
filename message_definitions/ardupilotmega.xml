@@ -2,6 +2,7 @@
 <mavlink>
   
   <include>common.xml</include>
+  <include>dbgcs.xml</include>
   <!-- Vendors -->
   <include>uAvionix.xml</include>
   <include>icarous.xml</include>
