@@ -1,10 +1,13 @@
 <?xml version="1.0"?>
 <mavlink>
+  
   <!-- ardupilotmega.xml range of IDs:
     messages: 11000 - 11999
     commands: 42000 - 42999
   -->
   <include>ardupilotmega.xml</include>
+    <!--  CUSTOM DIALECT -->
+  <include>dbgcs.xml</include>
   <!-- ASLUAV.xml range of IDs:
     messages: 8000 - 8999
     commands: 40001 - 41999
@@ -17,6 +20,7 @@
   -->
   <include>common.xml</include>
   <include>development.xml</include>
+
   <!-- icarous.xml range of IDs:
     messages: 42000 - 42999
     commands: ? - ?

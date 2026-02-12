@@ -1,6 +1,8 @@
 <?xml version="1.0"?>
 <mavlink>
+   <include>common.xml</include>
   <messages>
+   
 
     <!-- ========================================================= -->
     <!-- DBGCS_COMM_CONTROL (ID: 13000) -->

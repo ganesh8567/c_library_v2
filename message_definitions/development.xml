@@ -2,6 +2,7 @@
 <mavlink>
   <!-- XML file for prototyping definitions for common.xml -->
   <include>common.xml</include>
+  <include>dbgcs.xml</include>
   <version>0</version>
   <dialect>0</dialect>
   <enums>
