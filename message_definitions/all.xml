@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<mavlink>
-  sadaa
+<mavlink
+  
   <!-- ardupilotmega.xml range of IDs:
     messages: 11000 - 11999
     commands: 42000 - 42999
